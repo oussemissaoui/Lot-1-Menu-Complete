@@ -51,12 +51,27 @@ int main(){
             
             break;
         case 1: //sous menu joueur
+                afficher_smenu_joueur(menu,ecran);
+                SDL_Flip(ecran);
 
+                gerer_event_smenu_joueur(&menu,event,&quitter,&indice_ecran);
+
+                mise_a_jour_smenu_joueur(&menu);
+
+                printf("mode de jeux %d \n",menu.mode_jeux);
             
             
 
             break;
         
+
+
+        case 10:
+
+                printf("wselna lel tache joueur\n");
+
+            break;
+
         default:
             break;
         }
